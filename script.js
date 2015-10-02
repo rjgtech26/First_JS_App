@@ -8,6 +8,14 @@
                 publisher: "p1",
                 information: "i1"
                 
+            },
+            {
+                 title: "t2",
+                genre: "g2",
+                rank: "r2",
+                publisher: "p2",
+                information: "i2"
+                
             }
             ]};
     
@@ -29,40 +37,48 @@
             
             if(count > 0 && searchValue !== ""){
                 
-                for(i = 0; i < count; i = i ++){
+                for(i = 0; i < count; i ++){
                     
                     var obj = list.games[i],
                      isItFound = obj.title.indexOf(searchValue);
                     
                     if (isItFound !== -1){
+                      debugger
+//                        target.innerHTML += '<p>' + obj.name + '<p>';
+                        target = document.getElementById("output");
                         var gTitle = document.createElement("p");
-                        var textTitle = document.createTextNode(obj.title);
+                        var textTitle = document.createTextNode(obj.title + obj.rank);
                         gTitle.appendChild(textTitle);
                         target.appendChild(gTitle);
+                    
                         
+                        console.log(textTitle);
+                        console.log(gTitle);
                         
                         
 //                        target.innerHTML += '<p>' + obj.title '<p>';
-                        
+                         
                     }
+                  
                     
                 }
+                 
                 
             }
-                        
+                      
             }
             
             
             
         }
-                       console.log(textTitle);
-                        console.log(gTitle);
-                        console.log(target);
-                         console.log(list);
-                         console.log(searchForm);
+                      
+//                        console.log(target);
+//                         console.log(list);
+//                         console.log(searchForm);
+//    
 //    
    
                                          
-            
+         ;  
                  
 }())
