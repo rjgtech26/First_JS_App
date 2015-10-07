@@ -14,8 +14,8 @@ head{
     
 }
 body{
-    border-color: darkmagenta
-    
+    border-color: darkmagenta;
+     
     
 }
 html{
@@ -23,4 +23,11 @@ html{
 }
 form{
     background-color: chartreuse
+}
+
+img{
+    position: relative;
+    width: 160px;
+    height: 200px;    
+    
 }

@@ -6,7 +6,8 @@
                 genre: "Rogue-Like",
                 rank: "1",
                 publisher: "Edmund McMillen",
-                information: "http://store.steampowered.com/app/113200/"
+                information: "http://store.steampowered.com/app/113200/",
+                image: "Binding_Of_Isaac.jpg" 
                 
             },
             {
@@ -14,7 +15,8 @@
                 genre: "Metroidvania",
                 rank: "2",
                 publisher: "Thomas Happ Games LLC",
-                information: "http://store.steampowered.com/app/332200/"
+                information: "http://store.steampowered.com/app/332200/",
+                image: "Axiom_Verge.png"
                 
             },
                {
@@ -22,7 +24,8 @@
                 genre: "Platformer",
                 rank: "3",
                 publisher: "Yacht Club Games",
-                information: "http://store.steampowered.com/app/250760/"
+                information: "http://store.steampowered.com/app/250760/",
+                image: "Shovel_knight_cover.jpg"
                 
             },
                     {
@@ -30,7 +33,8 @@
                 genre: "Shoot-Em-Up",
                 rank: "4",
                 publisher: "Rockin Android	",
-                information: "http://store.steampowered.com/app/92210/"
+                information: "http://store.steampowered.com/app/92210/",
+                image: "Hitogata_Happa.jpg"
                 
             },
                     {
@@ -38,7 +42,8 @@
                 genre: "Shoot-Em-Up",
                 rank: "5",
                 publisher: "Final Form Games",
-                information: "http://store.steampowered.com/app/94200/"
+                information: "http://store.steampowered.com/app/94200/",
+                image: "JamestownBoxArt.png"
               
             }
             
@@ -69,24 +74,35 @@
                     
                     if (isItFound !== -1){
                      
-//                        target.innerHTML += '<p>' + obj.name + '<p>';
+
                         target = document.getElementById("output");
                         var gTitle = document.createElement("p");
-                        var iLink = obj.information.link(obj.information);
-                        var testLink = document.getElementById("output").innerHTML = iLink;
-                        var textTitle = document.createTextNode(obj.rank + " " + obj.title + "   " + obj.genre + ("   ") + obj.publisher + testLink);
+                        var createImgElement = document.createElement("img");
+                        createImgElement.src = (obj.image);
+                       
+//                        var iLink = obj.information.link(obj.information);
+//                        var testLink = document.getElementById("output").innerHTML = iLink;
+                        
+                        var textRank = document.createTextNode( "Rank:"  + obj.rank);
+                        var textTitle = document.createTextNode("Title:" + obj.title);
+                        var textGenre = document.createTextNode("Genre:" + obj.genre);
+                        var textPub = document.createTextNode("Publisher:" + obj.publisher);  
+                      
+                        target.appendChild(createImgElement);
+                        gTitle.appendChild(textRank);
+                        gTitle.appendChild(document.createElement("br"));
                         gTitle.appendChild(textTitle);
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(textGenre);
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(textPub);
                         target.appendChild(gTitle);
-//                    
-//                        
-                        console.log(textTitle);
-                        console.log(gTitle);
                         
                         
-//                        target.innerHTML += '<p>' + obj.title '<p>';
+                  
                          
                     }
-                  
+                 
                     
                 }
                  
@@ -107,12 +123,26 @@
                     
                       target = document.getElementById("output");
                         var gTitle = document.createElement("p");
+                    
+                    var createImgElement = document.createElement("img");
+                        createImgElement.src = (obj.image);
                         
-                    var iLink = obj.information.link(obj.information);
-                        var testLink = document.getElementById("output").innerHTML = iLink;
-                        var textTitle = document.createTextNode(obj.rank + " " + obj.title + "   " + obj.genre + ("   ") + obj.publisher );
+//                    var iLink = obj.information.link(obj.information);
+//                        var testLink = document.getElementById("output").innerHTML = iLink;
+                        var textRank = document.createTextNode( "Rank:"  + obj.rank);
+                        var textTitle = document.createTextNode("Title:" + obj.title);
+                        var textGenre = document.createTextNode("Genre:" + obj.genre);
+                        var textPub = document.createTextNode("Publisher:" + obj.publisher);  
+                      
+                        target.appendChild(createImgElement);
+                        gTitle.appendChild(textRank);
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(textTitle);
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(textGenre);
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(textPub);
                         
-                        gTitle.appendChild(textTitle); 
                         target.appendChild(gTitle);
 //                    
                 }
