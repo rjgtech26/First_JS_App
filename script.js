@@ -7,7 +7,7 @@
                 rank: "1",
                 publisher: "Edmund McMillen",
                 information: "http://store.steampowered.com/app/113200/",
-                image: "Binding_Of_Isaac.jpg" 
+                image: "Images/Binding_Of_Isaac.jpg" 
                 
             },
             {
@@ -16,7 +16,7 @@
                 rank: "2",
                 publisher: "Thomas Happ Games LLC",
                 information: "http://store.steampowered.com/app/332200/",
-                image: "Axiom_Verge.png"
+                image: "Images/Axiom_Verge.png"
                 
             },
                {
@@ -25,7 +25,7 @@
                 rank: "3",
                 publisher: "Yacht Club Games",
                 information: "http://store.steampowered.com/app/250760/",
-                image: "Shovel_knight_cover.jpg"
+                image: "Images/Shovel_knight_cover.jpg"
                 
             },
                     {
@@ -34,7 +34,7 @@
                 rank: "4",
                 publisher: "Rockin Android	",
                 information: "http://store.steampowered.com/app/92210/",
-                image: "Hitogata_Happa.jpg"
+                image: "Images/Hitogata_Happa.jpg"
                 
             },
                     {
@@ -43,7 +43,7 @@
                 rank: "5",
                 publisher: "Final Form Games",
                 information: "http://store.steampowered.com/app/94200/",
-                image: "JamestownBoxArt.png"
+                image: "Images/JamestownBoxArt.png"
               
             }
             
