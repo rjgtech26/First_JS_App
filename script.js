@@ -77,11 +77,15 @@
 
                         target = document.getElementById("output");
                         var gTitle = document.createElement("p");
+                        
+                        var gLink = document.createElement("a");
+                        var linkTxtNode = document.createTextNode("Steam Page");
+                        gLink.href = (obj.information);
+                        
                         var createImgElement = document.createElement("img");
                         createImgElement.src = (obj.image);
                        
-//                        var iLink = obj.information.link(obj.information);
-//                        var testLink = document.getElementById("output").innerHTML = iLink;
+
                         
                         var textRank = document.createTextNode( "Rank:"  + obj.rank);
                         var textTitle = document.createTextNode("Title:" + obj.title);
@@ -96,6 +100,9 @@
                         gTitle.appendChild(textGenre);
                         gTitle.appendChild(document.createElement("br"));
                         gTitle.appendChild(textPub);
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(gLink);
+                        gLink.appendChild(linkTxtNode);
                         target.appendChild(gTitle);
                         
                         
@@ -123,6 +130,9 @@
                     
                       target = document.getElementById("output");
                         var gTitle = document.createElement("p");
+                        var gLink = document.createElement("a");
+                        var linkTxtNode = document.createTextNode("Steam Page");
+                        gLink.href = (obj.information);
                     
                     var createImgElement = document.createElement("img");
                         createImgElement.src = (obj.image);
@@ -142,7 +152,9 @@
                         gTitle.appendChild(textGenre);
                         gTitle.appendChild(document.createElement("br"));
                         gTitle.appendChild(textPub);
-                        
+                        gTitle.appendChild(document.createElement("br"));
+                        gTitle.appendChild(gLink);
+                        gLink.appendChild(linkTxtNode);
                         target.appendChild(gTitle);
 //                    
                 }
